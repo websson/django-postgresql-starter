@@ -43,9 +43,12 @@ Press the button above: it opens Uppcoder's deploy page with this starter and Po
    user (it takes the username, password and email you typed on the card):
 
    ```bash
-   python manage.py migrate
-   python manage.py createsuperuser --noinput
+   pixi run -e web-django python manage.py migrate
+   pixi run -e web-django python manage.py createsuperuser --noinput
    ```
+
+   (`pixi run -e web-django` runs them in the app's own Python environment; a
+   plain `python` in the terminal is a different one, without Django.)
 
 6. Open the app's address: the front page says `postgresql`. Sign in at `/admin/`.
 
