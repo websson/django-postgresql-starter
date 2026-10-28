@@ -35,7 +35,8 @@ MIDDLEWARE = [
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
-    "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    # instead of XFrameOptionsMiddleware (DENY): see mysite/frame.py
+    "mysite.frame.FrameAncestorsMiddleware",
 ]
 
 ROOT_URLCONF = "mysite.urls"

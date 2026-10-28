@@ -20,6 +20,9 @@ the two settings that usually cost an afternoon behind an HTTPS proxy.
 - **`DJANGO_SECRET_KEY`, `DJANGO_DEBUG`, `DJANGO_ALLOWED_HOSTS`** from the
   environment, with development defaults. Set a real secret key before you
   share the app.
+- **Frames:** only Uppcoder (and the app itself) may show it inside a frame, so the
+  builder and editor can preview it; every other site is refused, as with Django's
+  default `X-Frame-Options: DENY`. `FRAME_ANCESTORS` changes the list (`'none'` refuses all).
 - **A `notes` app** with its migration, an admin page and a front page that
   says which database it is on.
 
