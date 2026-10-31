@@ -41,7 +41,7 @@ Press the button above: it opens Uppcoder's deploy page with this starter and Po
    connected to the app automatically. On the Django card, fill in an admin
    username, password and email.
 3. On the Django card, under Git repository, paste
-   `https://github.com/websson/django-postgresql-starter` (branch `main`).
+   `https://github.com/Uppcoder/django-postgresql-starter` (branch `main`).
 4. Deploy. Uppcoder clones the repository, sets the `POSTGRES_*` variables and
    installs the PostgreSQL driver.
 5. Open the web terminal on the stack page and create the tables and the admin
